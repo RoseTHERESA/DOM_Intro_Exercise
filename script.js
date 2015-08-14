@@ -36,8 +36,15 @@ window.onload = function() {
 		});
 	}
 
-document.querySelector("img").getAttribute("src");
-document.querySelector("img").setAttribute("src", what you set it to);
+	function changeImage(){
+		// grab img
+		// change src attr to ./image/whatever i clicked .jpeg
+		//document.querySelector("img").setAttribute("src", what you set it to);
+		var image = document.querySelector("img");
+		image.setAttribute("src", "./imagse/" + this.innerText + ".jpeg");
+	}
+
+
 
 
 		//refactor the function:
